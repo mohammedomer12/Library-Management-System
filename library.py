@@ -29,6 +29,7 @@ class Library:
         book = Book(title, author, year , pages)
         self.books.append(book)
         self.save_books()
+        print('Book added to the library')
 
     def save_books(self):
         with open(self.book_file , 'w', newline = '') as file:
